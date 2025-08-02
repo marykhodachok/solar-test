@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Погода</h1>
+        
+        <div class="search-container">
+            <input type="text" class="input-city" id="address" placeholder="Введите город...">
+            <link href="https://cdn.jsdelivr.net/npm/@dadata/suggestions@25.4.1/dist/suggestions.min.css" rel="stylesheet" />
+
+            <span id="autocomplete-results" class="autocomplete-results"></span>
+
+            <div class="buttons">
+            <button id="btn-search" class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i>Поиск</button>
+            <button id="btn-geo" class="btn btn-geo"><i class="fa-solid fa-location-arrow"></i></button>
+            </div>
+
+        </div>
+
+        <div id="weather-info" class="weather-info hidden">
+
+            <div class="weather-main">
+                <h2 id="city-name"></h2>
+                <div class="weather-temp">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <span id="temperature"></span>
+                </div>
+                <p id="weather-description"></p>
+            </div>
+
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@dadata/suggestions@25.4.1/dist/suggestions.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
