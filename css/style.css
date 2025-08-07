@@ -38,13 +38,12 @@ h3 {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 600px;
     margin: 40px auto;
 }
 
 .search-container {
     min-width: 600px;
-    margin-bottom: 24px;
 }
 
 .input-city {
@@ -142,7 +141,7 @@ h3 {
 }
 
 .weather__main h2 {
-    width: 95%;
+    width: 96%;
 }
 
 .fa-bookmark {
@@ -223,12 +222,14 @@ h3 {
 .savedCities {
     margin-bottom: 24px;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 12px;
     gap: 8px;
 }
 
 .bookmark__savedCities h3 {
     margin-left: 12px;
+    margin-top: 24px;
     margin-bottom: 12px;
 }
 
@@ -255,4 +256,8 @@ h3 {
     font-size: 56px;
     margin-right: 12px;
 
+}
+
+#savedCityesTitle {
+    display: none;
 }

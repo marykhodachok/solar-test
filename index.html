@@ -12,7 +12,7 @@
         <h1>Погода</h1>
         
         <div class="search-container">
-            <input type="text" class="input-city" id="address" placeholder="Введите город...">
+            <input type="text" class="input-city" id="address" placeholder="Введите город..." onInput="clearSelectedData()">
             <link href="https://cdn.jsdelivr.net/npm/@dadata/suggestions@25.4.1/dist/suggestions.min.css" rel="stylesheet" />
 
             <div class="buttons">
@@ -23,18 +23,16 @@
         </div>
 
         <div class="bookmark__savedCities">
-            <h3>Сохранённые города</h3>
-            <div class="savedCities">
-                <div class="savedCity">Москва <i class="fa-solid fa-trash-can"></i></div>
-                <div class="savedCity">Севастополь <i class="fa-solid fa-trash-can"></i></div>
-                <div class="savedCity">Екатеринбург <i class="fa-solid fa-trash-can"></i></div>
+            <h3 id="savedCitiesTitle">Сохранённые города</h3>
+            <div id="savedCities" class="savedCities">
+
             </div>
         </div>
 
         <div class="weather" id="weather">
             <div class="weather__main">
                 <h2 id="weather-city"></h2>
-                <i class="fas fa-bookmark"></i>
+                <i id="saveCity" class="fas fa-bookmark"></i>
                 <div class="weather__main-item weather__general-item">
                     <i id="weatherIcon"></i>
                     <span class="main-temperature"><span id="main-temperature"></span>°</span>
@@ -65,6 +63,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@dadata/suggestions@25.4.1/dist/suggestions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
